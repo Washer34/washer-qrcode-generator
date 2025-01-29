@@ -1,0 +1,64 @@
+{
+  "name": "washer-qrcode-generator",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "clean": "rimraf dist build"
+  },
+  "keywords": [
+    "QR Code",
+    "Electron",
+    "Generator",
+    "Washer",
+    "QR"
+  ],
+  "author": "Washer",
+  "license": "MIT",
+  "description": "Une application Electron permettant de générer des QR Codes avec ou sans logo.",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Washer34/washer-qrcode-generator"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "electron": "^34.0.1",
+    "electron-builder": "^25.1.8",
+    "rimraf": "^5.0.1"
+  },
+  "build": {
+    "appId": "com.washer.qrcode",
+    "productName": "Washer QR Code Generator",
+    "copyright": "Copyright © 2025 Washer",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/.cache"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "artifactName": "${productName}-Setup-${version}.exe"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "shortcutName": "Washer QR Code Generator"
+    }
+  }
+}

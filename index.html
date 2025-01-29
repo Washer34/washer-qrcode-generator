@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Générateur de QR Code</title>
+    <style>
+      html {
+        padding: 1rem;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.9);
+        max-width: 400px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+      }
+
+      input,
+      button {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+      }
+
+      .preview-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+
+      p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      h1 {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔗 Washer QR Code Generator</h1>
+
+      <label><b>URL :</b></label>
+      <input type="text" id="url" placeholder="Entrez l'URL ici..." />
+
+      <label><b>Logo (optionnel) :</b></label>
+      <button id="logoPickerBtn">Choisir un fichier</button>
+      <p id="logoPathDisplay">Aucun logo sélectionné</p>
+
+      <button id="generateBtn">🚀 Générer QR Code</button>
+
+      <div class="preview-container">
+        <h2>Prévisualisation :</h2>
+        <img id="qrPreview" alt="QR Code généré" />
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
