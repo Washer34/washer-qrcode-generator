@@ -4,8 +4,8 @@ Une application pour générer des QR Codes avec ou sans logo.
 
 ## 📥 Téléchargement
 
-🔹 **Windows** : [Télécharger le .exe](https://github.com/Washer34/washer-qrcode-generator/releases)  
-🔹 **Mac** : [Télécharger le .dmg](https://github.com/Washer34/washer-qrcode-generator/releases)
+🔹 **Windows** : [Télécharger le .exe](https://github.com/Washer34/washer-qrcode-generator/releases/latest)  
+🔹 **Mac** : [Télécharger le .dmg](https://github.com/Washer34/washer-qrcode-generator/releases/latest)
 
 ---
 
