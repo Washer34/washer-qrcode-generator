@@ -22,7 +22,7 @@ npm run dist
 
 📌 Prérequis :
 
-- Node.js (Dernière version) → Télécharger Node.js
+- Node.js (Dernière version) → [Télécharger Node.js](https://nodejs.org/fr/download)
 - npm (installé avec Node.js)
 - Git (pour cloner le repo)
 
