@@ -31,9 +31,13 @@ npm run dist
 ## 🚀 Comment utiliser l'application ?
 
 1️⃣ Lancez Washer QR Code Generator
+
 2️⃣ Entrez une URL dans le champ prévu.
+
 3️⃣ Ajoutez un logo (optionnel) en sélectionnant une image.
+
 4️⃣ Cliquez sur "Générer QR Code"
+
 5️⃣ Le QR Code sera enregistré dans le même dossier que l’application ! 📂
 
 ---
@@ -56,7 +60,9 @@ npm run dist
 ## 💡 Améliorations futures
 
 ✅ Ajout d’une option pour personnaliser les couleurs du QR Code 🎨
+
 ✅ Export du QR Code en SVG, PDF ✍️
+
 ✅ Interface plus ergonomique 🔥
 
 ---
@@ -64,6 +70,7 @@ npm run dist
 ## 💬 Un bug ou une suggestion ?
 
 Si vous avez des idées d'amélioration ou rencontrez un problème, ouvrez une issue ici :
+
 👉 [Créer une issue](https://github.com/Washer34/washer-qrcode-generator/issues)
 
 ---
@@ -77,4 +84,5 @@ Si vous aimez l'application, n'oubliez pas de mettre une ⭐ sur le repo ! 😊 
 ## ✨ Derniers ajouts :
 
 ✅ Correction du bug sur Mac : Le QR Code est maintenant généré dans le bon dossier.
+
 ✅ Support multi-plateforme : Fonctionne sous Windows & macOS !
