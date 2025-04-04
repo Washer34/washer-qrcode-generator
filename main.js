@@ -65,8 +65,8 @@ ipcMain.on("generate-qr", async (event, { url, logoPath }) => {
       const qrMetadata = await sharp(qrCodePath).metadata();
       const qrSize = qrMetadata.width;
 
-      // 🔹 3️⃣ Redimensionner le logo (20% du QR Code)
-      const logoSize = Math.floor(qrSize * 0.2);
+      // 🔹 3️⃣ Redimensionner le logo (30% du QR Code)
+      const logoSize = Math.floor(qrSize * 0.3);
       await sharp(logoPath).resize(logoSize).toFile(resizedLogoPath);
 
       // 🔹 4️⃣ Fusionner le logo au centre du QR Code
